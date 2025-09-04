@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/Screenshot 2025-09-03 at 19-10-05 google sheets - Google Search.png
 title: "Budget Manager"
 date: 2024
 published: true
