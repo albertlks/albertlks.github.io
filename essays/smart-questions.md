@@ -4,16 +4,12 @@ type: essay
 title: "Smart Questions, Good Answers"
 # All dates must be YYYY-MM-DD format!
 date: 2025-09-10
-published: false
+published: true
 labels:
   - Questions
   - Answers
   - StackOverflow
 ---
-
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
-
-
   
 ## "There are no stupid questions!" or are there?
 
