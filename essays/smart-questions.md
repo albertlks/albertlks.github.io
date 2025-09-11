@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Smart Questions, Good Answers"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2025-09-10
 published: false
 labels:
   - Questions
@@ -13,87 +13,113 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
-## Is there such thing as a stupid question?
+## "There are no stupid questions!" or are there?
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+Growing up, teachers, coaches, and parents alike would always tell me and those around me "There are no stupid questions" then as expected sometime later someone would ask a question and they would inevitably get in return a look that makes them wonder if it was even worth asking. As a culture we have pushed this idea that people should ask questions and that it is okay to ask questions but our actions speak otherwise. So how do we avoid the looks of disgust and disappointment along with the snarky comments when we ask a question?
 
 ## What’s a smart question?
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+Well there can be a lot that goes into asking a smart question so let's start with an example from Stack Overflow a questions and answers forum for programmers!
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
-
-```
-Q: python date of the previous month
-
-I am trying to get the date of the previous month with python. Here is what i've tried:
-
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
-
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
-
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
-```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
+In the following example we can see a good or "Smart" question. In this example the poster is just asking about some functions in his python package which are not working correctly.
 
 ```
-A: datetime and the datetime.timedelta classes are your friend.
 
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
+My System/Setup
 
-Like this:
+    Windows 11 (Enterprise)
+    Running in VS Code
+    Running Python 3.13 in a .venv/
+    Using uv (via python -m pip install uv, I cannot download uv via curl on the system I have to use.)
 
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
+The Project Layout
+
+I have a standard src layout for a Python project with a pyproject.toml file as follows:
+Directory Structure
+
+my_project/
+├── .venv/
+├── img/
+├── src/
+│   └── lib_name/
+│      ├── __init__.py
+│      ├── lib_name.py
+│      ├── file1.py
+│      └── file2.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_file1.py
+│   └── test_file2.py
+│
+├── notebooks/
+│   └── experimental.ipynb
+│
+├── .gitignore
+├── .python-version
+├── README.md
+├── uv.lock
+└── pyproject.toml
+
+pyproject.toml:
+
+[project]
+name = "my_project"
+version = "1.0"
+description = "My cool project."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.3.2",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "notebook>=7.4.5",
+    "pip>=25.2",
+    "pytest>=8.4.1",
+    "uv>=0.8.14",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+The Problem
+
+I have already run python -m uv pip install -e . to ensure my project in the src/ directory can be developed in editable mode.
+
+Then, in my notebooks/, I have a simple .ipynb file that runs import lib_name where I get no errors. I then try to access a function in that imported lib e.g., lib_name.func() Which gives me the following error AttributeError: module 'lib_name' has no attribute 'func'.
+
+I'm puzzled as to why the notebook can see my module but not the functions contained within it. Running dir(lib_name) in the notebook only gives me the builtin dunder methods where none of my included functions are visible.
+What I've Tried
+
+    Tweaking the pyproject.toml to ensure that setuptools can see the src/ directory when I run the python -m pip install -e . command
+    Playing around with the contents of the __init__.py files (currently blank) to try to directly import the functions using __all__ to no avail.
+    Implementing solutions from similar questions e.g., this one submitted here.
+
+I'm unsure if this is related to my project structure, a corrupted .venv/, issues with uv when installed via pip, or perhaps an error in my pyproject.toml file.
+
+Any advice/support would be greatly appreciated!
 
 ```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
 
-## The foolproof way to get ignored.
+What I like about this question is that he explains his situation, tells you the systems and set up he is working with, and most importantly explains what he has already tried. Another great thing about this question is that the title is clear and conveys the issue in a concise way. The post was only made one day ago but I am sure that after today or a few more todays he will have an answer and when he gets that the right thing to do is mark it as resolved.
 
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
+## How to do it the wrong way.
 
-```
-Q: Facebook Desktop Notifier
+Below is an example of how *not* to ask a question.
 
-I am a beginner programmer that have never used anything other than what's included in a language.
+<img width = "200px" class ="rounded float-start pe-4" src ="..img/smart-questions/Screenshot 2025-09-10 163817.png >
 
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
+So, what went wrong here?
 
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
+Well to start off the title could use some work, you can identify he is having a problem with his code in python possibly related to an if statement but that is all. Sadly it only gets worse from here though, one of the big lessons to learn when asking a smart question is exhausting all of your own personal options when it comes to answering it yourself. The poster begins with stating they do not know how to post an image to the board, an admission like this while noble shows that you may have not tried your hardest in fixing your issue or even the issue of trying to convey it to others yourself yet. After this they begin to try and describe their issue but with no image nor any code to show us we can not really understand what is truly going on. Later the poster does end up closing his inquiry after only getting one comment asking him to upload the code itself. This is a good lesson and shows us what not to do and the consequences of your own carelessness can sometimes lead to others not wanting to help you or saying rather distasteful things
 
 ## Conclusion
 
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+So after going through two examples of asking smart questions the main takeaways can sum up to be. Choose an accurate title, make sure your title accurately depicts your problem while also remaining concise. Secondly, provide documentation or images, when asking a question especially ones related to errors in your own work it is essential that you give people the code either typed, through an image, or from a video or file, as these can often show more and tell more than your words can. Thirdly, try your best to solve it yourself before asking others, when you do not try to solve your own issue and instead try to rely fully on other people it shows, and sometimes it will result in no help over a long time when you could have done it yourself. There are many more ways to make sure your questions remain smart and get smart answers but these are the main pieces of advice, programming is hard enough as it is and when asking for help from others it is important that you give people all the means necessary to help you swiftly, and easily.
