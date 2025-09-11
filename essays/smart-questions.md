@@ -18,7 +18,6 @@ Growing up, teachers, coaches, and parents alike would always tell me and those 
 ## What’s a smart question?
 
 Well there can be a lot that goes into asking a smart question so let's start with an example from Stack Overflow a questions and answers forum for programmers!
-
 In the following example we can see a good or "Smart" question. In this example the poster is just asking about some functions in his python package which are not working correctly.
 
 ```
@@ -112,7 +111,7 @@ What I like about this question is that he explains his situation, tells you the
 
 Below is an example of how *not* to ask a question.
 
-<img width="500px" class="rounded float-start pe-4" src ="../img/smart-questions/badquestionStackO.png">
+<img width="500px" class="rounded mx-auto d-block" src ="../img/smart-questions/badquestionStackO.png">
 
 So, what went wrong here?
 
