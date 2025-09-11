@@ -111,7 +111,9 @@ What I like about this question is that he explains his situation, tells you the
 
 Below is an example of how *not* to ask a question.
 
-<img width="500px" class="rounded mx-auto d-block" src ="../img/smart-questions/badquestionStackO.png">
+<div class="text-center">
+  <img width="500px" class="rounded mx-auto d-block" src ="../img/smart-questions/badquestionStackO.png">
+</div>
 
 So, what went wrong here?
 
