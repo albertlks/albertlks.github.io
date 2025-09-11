@@ -116,7 +116,7 @@ What I like about this question is that he explains his situation, tells you the
 
 Below is an example of how *not* to ask a question.
 
-<img width="200px" class="rounded float-start pe-4" src ="img/smart-questions/Screenshot 2025-09-10 163817.png">
+<img width="200px" class="rounded float-start pe-4" src ="img/smart-questions/badquestionStackO.png">
 
 So, what went wrong here?
 
