@@ -13,6 +13,8 @@ labels:
 
 <img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
 
+
+  
 ## "There are no stupid questions!" or are there?
 
 Growing up, teachers, coaches, and parents alike would always tell me and those around me "There are no stupid questions" then as expected sometime later someone would ask a question and they would inevitably get in return a look that makes them wonder if it was even worth asking. As a culture we have pushed this idea that people should ask questions and that it is okay to ask questions but our actions speak otherwise. So how do we avoid the looks of disgust and disappointment along with the snarky comments when we ask a question?
@@ -114,7 +116,7 @@ What I like about this question is that he explains his situation, tells you the
 
 Below is an example of how *not* to ask a question.
 
-<img width = "200px" class ="rounded float-start pe-4" src ="..img/smart-questions/Screenshot 2025-09-10 163817.png >
+<img width="200px" class="rounded float-start pe-4" src ="..img/smart-questions/Screenshot 2025-09-10 163817.png">
 
 So, what went wrong here?
 
