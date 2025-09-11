@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "Asking Questions the Smart way"
 # All dates must be YYYY-MM-DD format!
 date: 2025-09-10
 published: true
