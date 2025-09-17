@@ -15,7 +15,7 @@ labels:
 
 Growing up, teachers, coaches, and parents alike would always tell me and those around me "There are no stupid questions" then as expected sometime later someone would ask a question and they would inevitably get in return a look that makes them wonder if it was even worth asking. As a culture we have pushed this idea that people should ask questions and that it is okay to ask questions but our actions speak otherwise. So how do we avoid the looks of disgust and disappointment along with the snarky comments when we ask a question?
 
-## What’s a smart question?
+## What is a smart question?
 
 Well there can be a lot that goes into asking a smart question so let's start with an example from Stack Overflow a questions and answers forum for programmers!
 In the following example we can see a good or "Smart" question. In this example the poster is just asking about some functions in his python package which are not working correctly.
