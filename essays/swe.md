@@ -11,7 +11,7 @@ labels:
 ---
 
 
- ## My Path
+## My Path
 
 
   From the start similarly to most people in this course and whole degree path I have been playing with computers for as long as I can remember. Whether it was hogging the computer from my brother or begging my parents for my own PC, I have always loved computers. Even though I had this passion for computers I never knew how I could pursue something like that but also in a way where I could work alongside others and with my community. In highschool the only computer related course(s) I could take were in cyber security which I enjoyed but I wanted something more hands on, something where I could build and assist the people around me who work so hard to help me. Thats when I discovered coding.
