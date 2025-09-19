@@ -1,19 +1,20 @@
 ---
 layout: essay
 type: essay
-title: "Igniting the fire"
+title: "Designing my Future"
 # All dates must be YYYY-MM-DD format!
-date: 2015-08-26
-published: false
+date: 2025-09-18
+published: true
 labels:
   - Software Engineering
   - Learning
 ---
 
-<img width="100px" class="rounded float-start pe-4" src="../img/igniting/paintbrushes.jpg">
+<img width="500px" class="rounded float-start pe-4" src="../img/Screenshot 2025-09-18 195710.png">
 
-Ever since I first grasped a paintbrush, I’ve always been eager to learn about design. Design is such a complex concept. For example, when looking at abstract art, its meaning can be completely different for different people. It motivates a person to think thoughtfully and has the potential to submerge them in a sea of imagination. It’s that special relationship between the viewer and the art that makes something as technical as software engineering interesting to me.
 
-I never used to think that design and technology went hand in hand.  Thus, learning about software engineering and the role of design has been incredibly interesting to me. Design, implementation, and management are just some of the many things I wish to learn more about. Good art, in a way, makes a person question it. They become joined in the idea of visualization – where captivation meets inspiration.
+  From the start similarly to most people in this course and whole degree path I have been playing with computers for as long as I can remember. Whether it was hogging the computer from my brother or begging my parents for my own PC, I have always loved computers. Even though I had this passion for computers I never knew how I could pursue something like that but also in a way where I could work alongside others and with my community. In highschool the only computer related course(s) I could take were in cyber security which I enjoyed but I wanted something more hands on, something where I could build and assist the people around me who work so hard to help me. Thats when I discovered coding.
 
-I am now starting to take a Software Engineering class. I hope to learn a lot through the course, but I know it will be just the beginning of my journey. By the time I’m done with it, I hope I’ve learned enough to take the next step in my life as a developer. But until then, my fire will keep on burning.
+ ## My Path
+ 
+  In the summer before college I learned more about programming and tried some online courses and found that it was really fun and challenging in a way that felt exciting. Thats when I realized that the career I wanted to pursue was being a software engineer, being able to work with others to solve problems and help build things to help my community through coding sounds really exciting. In the near future as a big step towards doing that I would like to build a website that operates as an appointment site that can be used in testing centers. The one we use at my job has times where it stops working, or bugs come about and leaves us having to do everything by hand. The concept of being able to build something to fix this issue and to help not only myself, my coworkers, but also those around me makes me happy. Helping the community and the world around is what it means to be a software engineer and thats why I want to pursue it.
