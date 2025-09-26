@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "From Messy Errors to Clean Code
+title: "From Messy Errors to Clean Code"
 date: 2025-09-25
 published: false
 labels:
