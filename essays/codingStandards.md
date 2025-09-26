@@ -10,7 +10,7 @@ labels:
   - Organization
 ---
 
-<img width="200px" class="rounded float-start pe-4" src ="..img/badcode.png">
+<img width="200px" class="rounded float-start pe-4" src ="../img/badcode.png">
 
 ## Starting Messy but Ending Clean
   When I first ran ESlint it was more bothersome then helpful personally. I saw my code with zero errors light up with red squiggles everywhere telling me about indentations, single quotes, and more and at first I thought it was silly. After just one week of using it I can honestly say I am grateful to have it.
