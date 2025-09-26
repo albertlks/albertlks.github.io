@@ -10,7 +10,7 @@ labels:
   - Organization
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
+<img width="200px" class="rounded float-start pe-4" src="..img/badcode.png">
 
 
 ## Starting Messy but Ending Clean
@@ -21,4 +21,3 @@ labels:
   Outside of just my individual case another reason ESlint is great is how it helps you as the reader digest other people’s code. Instead of each person having small differences in their coding style which can lead to their code being harder to read with something like ESlint that throws errors when you are not following the standards it will make it so any person can look at your code or anyone who is using it and understand their intentions much easier.
   
   Overall ESlint was certainly stressful at first and even now I still have some issues during set up, I think ESlint as a means of enforcing coding standards is incredible. At times it can without a doubt be mentally taxing to go through many lines fixing small things just to appease the extension I think in it is still great to have.
-
