@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Coding like Lebron
+title: Our Savior, Bootstrap 5
 # All dates must be YYYY-MM-DD format!
 date: 2025-10-09
 published: true
