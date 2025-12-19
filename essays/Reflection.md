@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Coding like Lebron
+title: My Reflection
 date: 2025-12-18
 published: true
 labels:
