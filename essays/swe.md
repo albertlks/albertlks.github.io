@@ -4,7 +4,7 @@ type: essay
 title: "Designing my Future"
 # All dates must be YYYY-MM-DD format!
 date: 2025-09-18
-published: true
+published: false
 labels:
   - Software Engineering
   - Learning
