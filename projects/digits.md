@@ -2,7 +2,7 @@
 layout: project
 type: project
 title: "Digits"
-image: img/githubIcon.png
+image: img/githubIcon1.png
 date: 2025
 published: true
 labels:
